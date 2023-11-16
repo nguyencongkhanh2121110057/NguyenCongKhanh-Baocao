@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Auth extends Model
+{
+    use HasFactory;
+    protected $table = 'nck_brand';
+
+    protected $fillable = [
+        'name',
+        'image',
+        'slug',
+        'sort_order',
+        'metakey',
+        'metadesc',
+        'updated_by',
+        'created_by',
+    ];
+}
